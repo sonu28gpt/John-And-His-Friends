@@ -40,9 +40,10 @@ function addData() {
 
 function removeAdmin() {
   //Write your code here, just console.log
-  arr.filter((el)=>{
+  arr=arr.filter((el)=>{
     return el.profession!='admin';
-  }).forEach((el)=>{
+  })
+  arr.forEach((el)=>{
     
     console.log(`id : ${el.id},name : ${el.name}, age : ${el.age}, profession : ${el.profession}`)
   
